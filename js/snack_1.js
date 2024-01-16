@@ -10,7 +10,7 @@ nome del tavolo, nome dell'ospite e posto occupato.
 Generiamo questo array in una variabile guestsList e stampiamolo in console
 */
 
-
+console.log('---- SNACK 1 ----')
 const guests = [
     'Brad Pitt',
     'Johnny Depp',
