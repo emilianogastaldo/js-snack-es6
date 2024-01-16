@@ -23,3 +23,29 @@ const studentsList = [
     { id: 102, name: 'Piero della Francesca', grades: 50 },
     { id: 120, name: 'Francesca da Polenta', grades: 84 }
 ];
+
+console.log('Lista completa degli studenti: ', studentsList);
+
+
+// Punto 1
+console.log('PUNTO 1:');
+// const studentsOver70 = studentsList.filter((student) => {
+//     if (student.grades >= 70) return true;
+//     else return false;
+// });
+const studentsOver70 = studentsList.filter(({ grades }) => grades >= 70);
+console.log('Lista degli studenti con voto maggiore di 70: ', studentsOver70);
+
+// Punto 2
+console.log('PUNTO 2:');
+// Primo modo:
+// const studentsOver70and120 = studentsList.filter((student) => {
+//     if (student.grades >= 70 && student.id >= 120) return true;
+// });
+
+// Secondo modo:
+// const studentsOver70and120 = studentsOver70.filter((student) => {
+//     if (student.id >= 120) return true;
+// });
+const studentsOver70and120 = studentsOver70.filter(({ id }) => id >= 120);
+console.log('Lista studenti con id maggiore di 120 e voto maggiore di 70:', studentsOver70and120)
