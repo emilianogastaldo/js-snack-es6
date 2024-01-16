@@ -48,4 +48,10 @@ console.log('PUNTO 2:');
 //     if (student.id >= 120) return true;
 // });
 const studentsOver70and120 = studentsOver70.filter(({ id }) => id >= 120);
-console.log('Lista studenti con id maggiore di 120 e voto maggiore di 70:', studentsOver70and120)
+console.log('Lista studenti con id maggiore di 120 e voto maggiore di 70:', studentsOver70and120);
+
+
+// Punto 3
+console.log('PUNTO 3:');
+const upperCaseNames = studentsList.map(({ name }) => name.toUpperCase());
+console.log('Lista dei nomi in maiuscolo:', upperCaseNames);
