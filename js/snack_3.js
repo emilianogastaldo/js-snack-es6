@@ -15,16 +15,11 @@ Stampare in console la bici con peso minore utilizzando il destructuring
  */
 console.log('---- SNACK 3 ----');
 
-const randomNumber = () => {
-    return Math.floor(Math.random() * 10) + 1;
-}
-
-
 //Creo un array di oggetti
 const bikesList = [];
-for (let i = 1; i <= 10; i++) {
+for (let i = 0; i < 10; i++) {
     bikesList.push(
-        { name: `bike ${i}`, weight: randomNumber() }
+        { name: `bike ${i + 1}`, weight: randomNumber() }
     );
 }
 console.log('Lista iniziale di bici: ', bikesList);
@@ -43,3 +38,4 @@ bikesList.forEach(({ name, weight }) => {
     if (weight === lightBike) message += `${name} `;
 });
 console.log(message, 'con il peso di: ' + lightBike);
+console.log('');

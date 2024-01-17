@@ -55,3 +55,4 @@ console.log('Lista studenti con id maggiore di 120 e voto maggiore di 70:', stud
 console.log('PUNTO 3:');
 const upperCaseNames = studentsList.map(({ name }) => name.toUpperCase());
 console.log('Lista dei nomi in maiuscolo:', upperCaseNames);
+console.log('');

@@ -32,3 +32,4 @@ const tableName = 'Tavolo Vip';
 const guestsList = guests.map((guest, i) => ({ tableName, guest, tableSeat: i + 1 }));
 
 console.log(guestsList);
+console.log('');
