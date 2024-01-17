@@ -27,8 +27,8 @@ const guests = [
 const tableName = 'Tavolo Vip';
 
 // Svolgimento
-const guestsList = guests.map((guest, i) => {
-    return { tableName, guest, tableSeat: i + 1 };
-});
+// Se devo restituire un oggeto e voglio togliere il return devo mettere l'oggetto dentro
+// a delle parentesi tonde.
+const guestsList = guests.map((guest, i) => ({ tableName, guest, tableSeat: i + 1 }));
 
 console.log(guestsList);
