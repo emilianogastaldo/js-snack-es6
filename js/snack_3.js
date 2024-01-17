@@ -7,12 +7,10 @@ Stampare in console la bici con peso minore utilizzando il destructuring
 */
 
 /**
- * Creo l'array di oggetti
+ * Creo l'array di oggetti 
  * 
- * ? Devo capire come trovare il peso minore.
- * 
- * 1) Tiro fuori un array con solo il peso
- * 2) Comparo i valori dell'array per trovare il più basso
+ * 1) Comparo i valori dell'array per trovare il più basso
+ * 2) Per farlo prendo il primo e inizio a compararlo agli altri
  * 3) Trovato il più basso vado a stampare l'oggetto che ha quel peso.
  */
 console.log('---- SNACK 3 ----');
