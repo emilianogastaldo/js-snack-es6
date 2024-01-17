@@ -33,7 +33,7 @@ console.log('PUNTO 1:');
 //     if (student.grades >= 70) return true;
 //     else return false;
 // });
-const studentsOver70 = studentsList.filter(({ grades }) => grades >= 70);
+const studentsOver70 = studentsList.filter(({ grades }) => grades > 70);
 console.log('Lista degli studenti con voto maggiore di 70: ', studentsOver70);
 
 // Punto 2
@@ -47,7 +47,7 @@ console.log('PUNTO 2:');
 // const studentsOver70and120 = studentsOver70.filter((student) => {
 //     if (student.id >= 120) return true;
 // });
-const studentsOver70and120 = studentsOver70.filter(({ id }) => id >= 120);
+const studentsOver70and120 = studentsOver70.filter(({ id }) => id > 120);
 console.log('Lista studenti con id maggiore di 120 e voto maggiore di 70:', studentsOver70and120);
 
 
