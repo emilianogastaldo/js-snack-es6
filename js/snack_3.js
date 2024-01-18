@@ -25,11 +25,11 @@ for (let i = 0; i < 10; i++) {
 console.log('Lista iniziale di bici: ', bikesList);
 
 // Creo una costante in cui salvare il peso minore
-let lightBike = bikesList[0].weight;
+let lightBike = bikesList[0].weight; // Potevo usare Infinity
 
 // Cerco la più leggera
-bikesList.forEach(bike => {
-    if (lightBike > bike.weight) lightBike = bike.weight
+bikesList.forEach(({ weight }) => {
+    if (lightBike > weight) lightBike = weight
 })
 
 // Stampo il risultato
@@ -38,4 +38,13 @@ bikesList.forEach(({ name, weight }) => {
     if (weight === lightBike) message += `${name} `;
 });
 console.log(message, 'con il peso di: ' + lightBike);
+
+// reduce fa il return di quello che voglio utilizzare al prossimo giro
+const lightestItem = bikesList.reduce((result, bike) => {
+    return bike.weight < result.weight ? bike : result
+    // if (bike.weight < result.weight) return bike;
+    // else return result;
+}, bikesList[0]);
+
+console.log(lightestItem);
 console.log('');

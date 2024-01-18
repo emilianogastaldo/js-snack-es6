@@ -38,6 +38,10 @@ clubList.forEach((club) => {
     const newObj = { name, fouls };
     newClubList.push(newObj);
 });
+// Potevo usare il map
+const newclub = clubList.map(({ name, fouls }) => ({ name, fouls }));
+
 console.log('Nuova lista: ', newClubList);
+console.log('Nuova lista: ', newclub);
 
 console.log('Fine snack');
